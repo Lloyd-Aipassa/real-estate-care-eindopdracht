@@ -2,7 +2,7 @@
        <div v-for="{ _id, Locatie, Datum, Adress, typeOfInspection, pathForm } in toDo" :key="_id" class="post theme2">
       <div class="content">
         <span>
-          <h2>Execute befor: {{ Datum }},<br>{{ Locatie }},&nbsp;&nbsp{{ Adress }}<br>scheduled for: {{ typeOfInspection }}
+          <h2>Execute before: {{ Datum }},<br>{{ Locatie }},&nbsp;&nbsp{{ Adress }}<br>scheduled for: {{ typeOfInspection }}
           </h2>
           <v-btn :to="`${pathForm}`" class="ml-2 text-white button" max-width="40%" size="small" variant="flat"
             color="#00AAA2">
