@@ -4,6 +4,7 @@
     <Header v-show="$route.name !== 'Login'" />
       <router-view />
     <Footer v-show="$route.name !== 'Login'" />
+   
   </v-app>
 
 </template>
@@ -13,6 +14,7 @@
 import Header from '@/components/Header.vue';
 import Footer from '@/components/Footer.vue';
 import Theme from '@/components/Theme.vue';
+
 
 export default {
   name: 'App',
@@ -26,7 +28,7 @@ export default {
   components: {
     Footer,
     Header,
-    Theme
+    Theme,
   },
 
   mounted() {

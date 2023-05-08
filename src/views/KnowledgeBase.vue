@@ -313,7 +313,7 @@ main {
 
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1279px) {
 
     .kb-knop {
  
@@ -331,11 +331,24 @@ main {
     text-align: center;
     padding: 20px 0;
     border-radius: 5px;
-    width: 100%;
+    max-width: 500px;
 }
 
     .theme2 {
         padding-bottom: 3px;
     }
+}
+
+@media only screen and (max-width: 600px) {
+   a {
+    text-decoration: none;
+    display: block;
+    color: white;
+    background-color: #00AAA2;
+    text-align: center;
+    padding: 20px 0;
+    border-radius: 5px;
+    width: 100%;
+}
 }
 </style>
