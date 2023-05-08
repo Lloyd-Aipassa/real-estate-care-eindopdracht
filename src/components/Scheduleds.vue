@@ -120,4 +120,20 @@ main {
   font-size: 20px;
 }
 
+h1.loading{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+  font-size: 50px;
+}
+
+.spin {
+  animation: spinnerAnimatie 3s infinite;
+}
+
+@keyframes spinnerAnimatie {
+  100% {transform: rotate(360deg);}
+}
+
 </style>
