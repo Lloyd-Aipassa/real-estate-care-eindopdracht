@@ -1,0 +1,86 @@
+{
+  "SchadeOpnemen": [
+    {
+      "Locatie": "Amsterdam",
+      "Datum": "2023-04-14",
+      "NieuweSchade": "yes",
+      "AcuteActieVereist": "yes",
+      "SoortSchade": "slijtage",
+      "Omschrijving": "gtghtrhthjyij6uik67i",
+      "id": 1
+    },
+    {
+      "Locatie": "Friesland",
+      "Datum": "2023-04-23",
+      "NieuweSchade": "yes",
+      "AcuteActieVereist": "yes",
+      "SoortSchade": "geweld",
+      "Omschrijving": "Severe damage due to force",
+      "id": "3bb"
+    },
+    {
+      "Locatie": "FRIESLAND,  ADDRESS 2",
+      "Datum": "2023-04-14",
+      "AcuteActieVereistMaintenance": "Ja",
+      "TypeOfMaintenance": "Wood is rotten",
+      "CostOfMaintenance": "500 - 1500",
+      "id": 7
+    }
+  ],
+  "toDo": [
+    {
+      "id": 1,
+      "Locatie": "Lutjebroek",
+      "Datum": "2023-11-18",
+      "Adress": "address 1",
+      "typeOfInspection": "Damage inpection",
+      "pathForm": "/Damages"
+    },
+    {
+      "id": 2,
+      "Locatie": "Friesland",
+      "Datum": "2023-12-08",
+      "Adress": "address 2",
+      "typeOfInspection": "Maintenance inpection",
+      "pathForm": "/Maintenance"
+    },
+    {
+      "id": 3,
+      "Locatie": "Arhnem",
+      "Datum": "2023-12-08",
+      "Adress": "address 4",
+      "typeOfInspection": "Modification inpection",
+      "pathForm": "/modifications"
+    },
+    {
+      "id": 4,
+      "Locatie": "Arhnem",
+      "Datum": "2023-10-08",
+      "Adress": "address 5",
+      "typeOfInspection": "Damage inpection",
+      "pathForm": "/Damages"
+    },
+    {
+      "id": 5,
+      "Locatie": "Groningen",
+      "Datum": "2023-12-28",
+      "Adress": "address 3",
+      "typeOfInspection": "Technical inpection",
+      "pathForm": "/Technical"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "Password": "ironman",
+      "eMail": "tony@stark.com",
+      "mobNumber": "777"
+    },
+    {
+      "id": 2,
+      "Password": "trainee",
+      "eMail": "trainee@noob.com",
+      "mobNumber": "777"
+    }
+  ]
+}
