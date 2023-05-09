@@ -2,13 +2,44 @@
 Deze applicatie is gemaakt door Lloyd Aipassa als afstudeer project voor het onderdeel "Front-end frameworks" 
 
 ## Werking applicatie
-De applicatie werkt als volgt. De inspecteur logt in, en komt terecht in het dashboard. Vanuit het dasboard kan de inspecteur navigeren naar toegewezen rapportages, uitgevoerde rapportages en de kennisbase. Ook vind je hier een knop voor de instellingen. In de header kun je ten alle tijden uitloggen en in de footer kun je terug naar de vorige pagina, of terugkeren naar het dashboard. (zie afbeelding).
 
-![mobile (19) (1)](https://user-images.githubusercontent.com/109522422/236956021-50d0cb9e-a98a-4bde-b931-da271ac60a26.png)
+### login
+De applicatie werkt als volgt. De inspecteur logt in, vult zijn  en komt terecht in het dashboard. Vanuit het dasboard <br>
+kan de inspecteur navigeren naar toegewezen rapportages, uitgevoerde rapportages en de kennisbase. Ook vind je hier een knop voor de instellingen.<br>
+In de header kun je ten alle tijden uitloggen en in de footer kun je terug naar de vorige pagina, of terugkeren naar het dashboard. (zie afbeelding).<br>
+
+![Group 3](https://github.com/Lloyd-Aipassa/real-estate-care-eindopdracht/assets/109522422/dfe7b06c-abc1-4f05-b380-f8c448d25d62) <br><br/> <br><br/>
+
+### toegewezen rapportages
+Vanuit het dashboard kan de inspecteur naar de toegewezen rapportages. Deze worden toegekend vanuit de backoffice en bevatten het adres, <br>
+de datum voorwanneer de inspectie uiterlijk uitgevoerd moet worden en het soort inspectie. Als de inspecteur op de groene knop klikt, dan wordt <br>
+hij automatisch doorgestuurd naar het juiste formulier voor de betreffende rapportage. (Zie afbeelding).<br><br>
+
+![Group 1](https://user-images.githubusercontent.com/109522422/237060028-9f3c26e0-5878-4c8f-98e4-2d55f072b360.png)<br><br/> <br><br/>
+
+### completed pagina
+Wanneer het formulier volledig ingevuld is, dan wordt de inspecteur geredirect naar de completed pagina. Hier kan de inspecteur <br>
+het ingevulde formulier bekijken, aanpassen mocht dat nodig zijn, of een nieuw formulier invullen als daar aanleiding toe is. (zie afbeelding).
+
+![Group 1 (1)](https://github.com/Lloyd-Aipassa/real-estate-care-eindopdracht/assets/109522422/89d46704-bc39-40ee-8dd1-88764f1e27bf)<br><br/> <br><br/>
+
+### settings
+Verder is er vanuit het dashboard een settings-knop waar de inspecteur bij de instellingen kan. Hier kan de inspecteur zijn wachtwoord
+<br>aanpassen, informatie over zichzelf vinden, het thema aanpassen. geluid en notificaties aanpassen.  (zie afbeelding).
+
+![Group 1 (2)](https://github.com/Lloyd-Aipassa/real-estate-care-eindopdracht/assets/109522422/b5dde12b-2220-4266-a4d4-222dbd0f1791)<br><br/> <br><br/>
+
+### kennis/informatiebase
+De vierde en laatste knop op het dasboard is voor de kennis/informatiebase. Dit is een pagina/online bibliotheek van informatie 
+<br>over een product, dienst, afdeling of een ander onderwerp. Hier kan de inspecteur alle informatie vinden betreffende de applicatie<br>
+of andere zaken die van toepassing zijn betreft zijn functie of Real Estate Care. 
+
+![Group 2](https://github.com/Lloyd-Aipassa/real-estate-care-eindopdracht/assets/109522422/42f989f1-f4e0-4f3d-99fe-5d603124c8f8)<br><br/> <br><br/>
 
 
+## prototype
 
-Er is een prototype gebouwd wat inhoudt dat de applicatie werkt, maar dat er een paar onderdelen nog niet volledig werkend zijn.  De volgende onderdelen zijn nog niet werkend:
+Momenteel is er een prototype gebouwd wat inhoudt dat de applicatie werkt, maar dat er een paar onderdelen nog niet volledig werkend zijn.  De volgende onderdelen zijn nog niet werkend:
 
  - Twee staps auth. wordt nu nog gesimuleerd.
  - De gebruiker kan momenteel nog niet zijn wachtwoord aanpassen in de instellingen.
@@ -16,8 +47,7 @@ Er is een prototype gebouwd wat inhoudt dat de applicatie werkt, maar dat er een
  - Er is geen gebruik van notificaties
  - Er is geen gebruik geluid.
 
-**Benodigdheden om de code te draaien:**
-
+**Benodigdheden om de applicatie te draaien:**
  - Node js
  - Een code editor 
  - Een terminal
