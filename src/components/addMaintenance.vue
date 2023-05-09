@@ -13,7 +13,8 @@
     <p class="error">{{ error.TypeOfMaintenance }}</p>
     <p class="error">{{ error.CostOfMaintenance }}</p>
 
-    <v-text-field label="Add Location" required v-model="Locatie" bg-color="#f0f0f100" :rules="[v => !!v || 'Location is required']"> </v-text-field>
+    <v-text-field label="Add Location" required v-model="Locatie" bg-color="#f0f0f100"
+      :rules="[v => !!v || 'Location is required']"> </v-text-field>
     <label>"Pick Date"
       <input placeholder="Pick a Datess" type="date" v-model="Datum"> <br>
     </label>
@@ -78,7 +79,7 @@ export default {
         this.error.CostOfMaintenance = 'Fill out the cost o f maintenance... '
       } else { this.error.CostOfMaintenance = '' }
 
-      if (this.Locatie.length && this.TypeOfMaintenance.length && this.CostOfMaintenance.length> 0) {
+      if (this.Locatie.length && this.TypeOfMaintenance.length && this.CostOfMaintenance.length > 0) {
         e.preventDefault();
         const newSchade = {
           Locatie: this.Locatie,
@@ -101,8 +102,8 @@ export default {
           this.error.CostOfMaintenance = ''
         }
         setTimeout(() => {
-          this.$router.push({ name: 'Scheduled' })
-        }, 2500);
+          this.$router.push({ name: 'Completed' })
+        }, 1500);
       }
     }
   }
@@ -112,14 +113,14 @@ export default {
     
 <style scoped>
 .error {
-    background-color: red;
-    font-family: 'Raleway', sans-serif;
+  background-color: red;
+  font-family: 'Raleway', sans-serif;
 }
 
-p.error{
-    color: white;
-    padding-left: 20px;
-    font-size: 12px;
+p.error {
+  color: white;
+  padding-left: 20px;
+  font-size: 12px;
 }
 
 

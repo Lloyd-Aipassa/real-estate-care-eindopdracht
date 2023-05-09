@@ -134,8 +134,8 @@ export default {
           this.error.requiredAction = ''
         }
         setTimeout(() => {
-          this.$router.push({ name: 'Scheduled' })
-        }, 2500);
+          this.$router.push({ name: 'Completed' })
+        }, 1500);
       }
     }
   }

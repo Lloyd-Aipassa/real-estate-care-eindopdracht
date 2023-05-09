@@ -24,7 +24,7 @@
 
 import { mapActions, mapGetters } from 'vuex';
 export default {
-
+    name: 'Completed',
 
     data() {
         return {

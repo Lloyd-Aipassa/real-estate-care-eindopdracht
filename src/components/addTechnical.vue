@@ -12,14 +12,16 @@
         <p class="error">{{ error.locatie }}</p>
         <p class="error">{{ error.TypeInstallation }}</p>
         <p class="error">{{ error.ReportedMalfunction }}</p>
-        <v-text-field label="Add Location" required v-model="Locatie" bg-color="#f0f0f100" :rules="[v => !!v || 'required']"> </v-text-field>
+        <v-text-field label="Add Location" required v-model="Locatie" bg-color="#f0f0f100"
+            :rules="[v => !!v || 'required']"> </v-text-field>
         <label>"Pick Date"
             <input placeholder="Pick Date" type="date" v-model="Datum"> <br>
         </label>
         <v-select v-model="TypeInstallation" :items="typeMain" :rules="[v => !!v || 'Item is required']"
             label="Type of installation" required bg-color="#f0f0f100">
         </v-select>
-        <v-text-field label="Reported malfunction" required v-model="ReportedMalfunction" bg-color="#f0f0f100" :rules="[v => !!v || 'required']">
+        <v-text-field label="Reported malfunction" required v-model="ReportedMalfunction" bg-color="#f0f0f100"
+            :rules="[v => !!v || 'required']">
         </v-text-field>
         <v-checkbox v-model="Aproved" label="Aproved" true-value="yes" false-value="No"></v-checkbox>
         <v-text-field label="Comments" required v-model="Comments" bg-color="#f0f0f100"> </v-text-field>
@@ -73,7 +75,7 @@ export default {
                 this.error.ReportedMalfunction = 'Fill out Reported malfunction... '
             } else { this.error.ReportedMalfunction = '' }
 
-            if (this.Locatie.length && this.TypeInstallation.length && this.ReportedMalfunction.length> 0) {
+            if (this.Locatie.length && this.TypeInstallation.length && this.ReportedMalfunction.length > 0) {
                 e.preventDefault();
                 const newSchade = {
                     Locatie: this.Locatie,
@@ -91,14 +93,14 @@ export default {
                     this.ReportedMalfunction = '',
                     this.Comments = '',
                     this.snackbar = true
-                    if (this.snackbar = true) {
+                if (this.snackbar = true) {
                     this.error.locatie = '',
-                    this.error.TypeInstallation = ''
+                        this.error.TypeInstallation = ''
                     this.error.ReportedMalfunction = ''
-        }
+                }
                 setTimeout(() => {
-                    this.$router.push({ name: 'Scheduled' })
-                }, 2500);
+                    this.$router.push({ name: 'Completed' })
+                }, 1500);
             }
         }
     }
@@ -108,14 +110,12 @@ export default {
   
     
 <style scoped>
-
-
 .error {
     background-color: red;
     font-family: 'Raleway', sans-serif;
 }
 
-p.error{
+p.error {
     color: white;
     padding-left: 10px;
     font-size: 12px;
