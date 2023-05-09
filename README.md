@@ -1,5 +1,13 @@
 # real-estate-care
 Deze applicatie is gemaakt door Lloyd Aipassa als afstudeer project voor het onderdeel "Front-end frameworks" 
+
+## Werking applicatie
+De applicatie werkt als volgt. De inspecteur logt in, en komt terecht in het dashboard. Vanuit het dasboard kan de inspecteur navigeren naar toegewezen rapportages, uitgevoerde rapportages en de kennisbase. Ook vind je hier een knop voor de instellingen. In de header kun je ten alle tijden uitloggen en in de footer kun je terug naar de vorige pagina, of terugkeren naar het dashboard. (zie afbeelding).
+
+![mobile (19) (1)](https://user-images.githubusercontent.com/109522422/236956021-50d0cb9e-a98a-4bde-b931-da271ac60a26.png)
+
+
+
 Er is een prototype gebouwd wat inhoudt dat de applicatie werkt, maar dat er een paar onderdelen nog niet volledig werkend zijn.  De volgende onderdelen zijn nog niet werkend:
 
  - Twee staps auth. wordt nu nog gesimuleerd.
@@ -36,24 +44,26 @@ npm run build
 
 ## Overige informatie
 
-Om het project volledig te laten werken is er uiteindelijk toch gekozen om een express server op te zetten icm mongoDB. (dit viel uiteindelijk best mee om op te zetten)
-<br>
-
- **Hier vind u de server code:**
+Om het project volledig te laten werken is er uiteindelijk toch gekozen om een express server op te zetten icm mongoDB (dit viel uiteindelijk best mee om op te zetten, maar misschien interessant om te laten zien voor toekomstige sollicitaties). <br>
+ **Hier vind u de code van de express server :**
  https://github.com/Lloyd-Aipassa/First-server 
  <br>
  
  **De live versie van de applicatie vind u hier:** 
- https://jolly-dragon-277465.netlify.app/
+ https://real-estate-care-lloyd-aipassa.netlify.app/
   <br>
   
+ **Het backoffice formulier om nieuwe inspecties toe te voegen vind u hier:** 
+ https://real-estate-care-add-inspection.netlify.app/
+  <br>
 
+# Heuristiek
 
 ***Heuristiek 1: Zichtbaarheid van de status is belangrijk***
-Wanneer er informatie van de database geladen moet worden bijvoorbeeld de openstaande inspecties of uitgevoerde inspecties dan wordt er een loader getoond zodat de inspecteur weet dat de data ingeladen wordt.
+Wanneer er informatie van de database ingeladen moet worden (bijvoorbeeld de openstaande inspecties of uitgevoerde inspecties) dan wordt er een loader getoond zodat de inspecteur weet dat de applicatie bezig is met het inladen van data.
 
 ***Heuristiek 2: Het systeem en de echte wereld komen overeen***
-De taal is afgestemd op de inspecteur, en er is gekozen voor iconen die een duidelijk beeld scheppen wat betreft het onderwerp. Denk bijvoorbeeld aan een radar icoon voor instellingen, of een icoon met een vinkje die leidt naar de uitgevoerde inspecties. 
+De taal is afgestemd op de inspecteur, en er is gekozen voor iconen die een duidelijk beeld scheppen wat betreft het onderwerp. Denk bijvoorbeeld aan een radar icoon voor instellingen, of een icoon met een vinkje die leidt naar alle uitgevoerde inspecties. 
 
 ***Heuristiek 3: Gebruiker heeft controle en vrijheid.***
 Alles moet goed snel en bereikbaar zijn voor de inspecteur. Vanaf het dashboard kan overal naar genavigeerd. Om deze reden moet de inspecteur ten alle tijden snel naar het dashboard kunnen navigeren en om die reden staat in de footer altijd een knop die de inspecteur terugbrengt naar het dashboard. 
@@ -79,7 +89,7 @@ Voor deze app heeft dit punt overlap met punt zeven. Het design in minimaal en a
 Hier liggen verbeterpunten. Momenteel als een formulier niet of volledig wordt ingevuld, dan wordt dit aangegeven met een boodschap in grote rode letters. Aan de ene kant is dit duidelijk, aan de andere kant kan dit misschien iets luchtiger. 
 
 ***Heuristiek 10: Bied een helpende hand***
-De applicatie moet over het algemeen voor de inspecteur duidelijk zijn. Maar in de toekomst zou er eventueel een handleiding betreft de applicatie gemaakt kunnen worden en geplaatst kunnen worden in knowledge base.
+De applicatie moet over het algemeen voor de inspecteur duidelijk zijn. Maar in de toekomst zou er eventueel een handleiding wat betreft de applicatie gemaakt kunnen worden. Deze zou dan weer eventueel geplaatst kunnen worden in knowledge base.
 
 # wcag 2.1 a
 
@@ -152,5 +162,4 @@ Getest op de vier grootste browsers.
 
 **Zorg ervoor dat hulptechnologieën begrijpen waar elke functie voor dient en in welke staat deze zich bevindt.**  
 Hier liggen nog verbeterpunten. Neem bijvoorbeeld een site die jouw app hardop leest deze komt niet door de login pagina.  
-
 
