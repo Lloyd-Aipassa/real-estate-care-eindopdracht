@@ -67,6 +67,9 @@ main {
 .content {
     width: 90%;
 }
+.content h2{
+    font-size: 18px;
+}
 
 
 
@@ -122,5 +125,8 @@ h1.loading {
 
 
     }
+    .content h2{
+    font-size: 16px;
+}
 }
 </style>
