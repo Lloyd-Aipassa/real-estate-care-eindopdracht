@@ -1,20 +1,20 @@
 <template>
-       <div v-for="{ _id, Locatie, Datum, Adress, typeOfInspection, pathForm } in toDo" :key="_id" class="post theme2">
-      <div class="content">
-        <span>
-          <h2>Execute before: {{ Datum }},<br>{{ Locatie }},&nbsp;&nbsp{{ Adress }}<br>scheduled for: {{ typeOfInspection }}
-          </h2>
-          <v-btn :to="`${pathForm}`" class="ml-2 text-white button" max-width="40%" size="small" variant="flat"
-            color="#00AAA2">
-            Go to forms </v-btn>
-        </span>
-        <v-icon class="icon" style="color: red;" size="25" @click="deleteRapport(_id)">mdi-delete</v-icon>
-      </div>
+  <div v-for="{ _id, Locatie, Datum, Adress, typeOfInspection, pathForm } in toDo" :key="_id" class="post theme2">
+    <div class="content">
+      <span>
+        <h2>Execute before: {{ Datum }},<br>{{ Locatie }},&nbsp;&nbsp{{ Adress }}<br>scheduled for: {{ typeOfInspection }}
+        </h2>
+        <v-btn :to="`${pathForm}`" class="ml-2 text-white button" max-width="40%" size="small" variant="flat"
+          color="#00AAA2">
+          Go to forms </v-btn>
+      </span>
+      <v-icon class="icon" style="color: red;" size="25" @click="deleteRapport(_id)">mdi-delete</v-icon>
     </div>
-    <div v-if="loading">
-    <h1  class="loading">
+  </div>
+  <div v-if="loading">
+    <h1 class="loading">
       <img :src="require('@/assets/spinner.svg')" class="spin" width="50" height="50" alt="logo" />
-        loading...
+      loading...
     </h1>
   </div>
 </template>
@@ -36,19 +36,19 @@ export default {
     getData() {
       this.loading = true
       fetch('https://kind-tan-goshawk-tux.cyclic.app/scheduled?_sort=Datum&order=desc')
-        .then((res) => res.json() 
-        .then(this.loading = false))
+        .then((res) => res.json()
+          .then(this.loading = false))
         .then((data) => this.toDo = data.sort((d1, d2) => (d1.Datum > d2.Datum) ? 1 : (d1.Datum < d2.Datum) ? -1 : 0))
         .catch(err => console.log(err.message))
     },
 
     deleteRapport(id) {
-     
+
       axios.delete('https://kind-tan-goshawk-tux.cyclic.app/scheduled' + id)
         .then(() => { this.toDo.splice(id, 1) })
         .then(() => {
-        //   this.$router.push({ name: 'Completed' })
-        this.reload++
+          //   this.$router.push({ name: 'Completed' })
+          this.reload++
         })
         .catch(err => console.log(err.message))
 
@@ -81,7 +81,7 @@ main {
   padding: 10px;
 }
 
-.icon-refresh{
+.icon-refresh {
   width: 10px;
 }
 
@@ -117,10 +117,10 @@ main {
 .post h2 {
 
   text-transform: uppercase;
-  font-size: 20px;
+  font-size: 18px;
 }
 
-h1.loading{
+h1.loading {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -133,7 +133,16 @@ h1.loading{
 }
 
 @keyframes spinnerAnimatie {
-  100% {transform: rotate(360deg);}
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
+@media only screen and (max-width: 600px) {
+  .post h2 {
+
+    text-transform: uppercase;
+    font-size: 16px;
+  }
+}
 </style>
