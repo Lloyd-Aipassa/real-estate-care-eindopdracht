@@ -1,15 +1,54 @@
 # real-estate-care
 Deze applicatie is gemaakt door Lloyd Aipassa als afstudeer project voor het onderdeel "Front-end frameworks" 
-Er is een prototype gebouwd wat inhoudt dat de applicatie werkt, maar dat er een paar onderdelen nog niet volledig werkend zijn.  De volgende onderdelen zijn nog niet werkend:
+
+## Werking applicatie
+
+### login
+De applicatie werkt als volgt. De inspecteur logt in, vult zijn gegevens in en komt terecht in het dashboard. Vanuit het dasboard <br>
+kan de inspecteur navigeren naar toegewezen rapportages, uitgevoerde rapportages en de kennisbase. Ook vind je hier een knop voor de instellingen.<br>
+In de header kun je ten alle tijden uitloggen en in de footer kun je terug naar de vorige pagina, of terugkeren naar het dashboard. (zie afbeelding).<br>
+
+![Group 3](https://github.com/Lloyd-Aipassa/real-estate-care-eindopdracht/assets/109522422/dfe7b06c-abc1-4f05-b380-f8c448d25d62) <br><br/> <br><br/>
+
+### toegewezen rapportages
+Vanuit het dashboard kan de inspecteur naar de toegewezen rapportages. Deze worden toegekend vanuit de backoffice en bevatten het adres, <br>
+de datum voorwanneer de inspectie uiterlijk uitgevoerd moet worden en het soort inspectie. Als de inspecteur op de groene knop klikt, dan wordt <br>
+hij automatisch doorgestuurd naar het juiste formulier voor de betreffende rapportage. (Zie afbeelding).<br><br>
+
+![Group 1](https://user-images.githubusercontent.com/109522422/237060028-9f3c26e0-5878-4c8f-98e4-2d55f072b360.png)<br><br/> <br><br/>
+
+### completed pagina
+Wanneer het formulier volledig ingevuld is, dan wordt de inspecteur geredirect naar de completed pagina. Hier kan de inspecteur <br>
+het ingevulde formulier bekijken, aanpassen mocht dat nodig zijn, of een nieuw formulier invullen als daar aanleiding toe is. (zie afbeelding).
+
+![Group 1 (1)](https://github.com/Lloyd-Aipassa/real-estate-care-eindopdracht/assets/109522422/89d46704-bc39-40ee-8dd1-88764f1e27bf)<br><br/> <br><br/>
+
+### settings
+Verder is er vanuit het dashboard een settings-knop waar de inspecteur bij de instellingen kan. Hier kan de inspecteur zijn wachtwoord
+<br>aanpassen, informatie over zichzelf vinden, het thema aanpassen. geluid en notificaties aanpassen.  (zie afbeelding).
+
+![Group 1 (2)](https://github.com/Lloyd-Aipassa/real-estate-care-eindopdracht/assets/109522422/b5dde12b-2220-4266-a4d4-222dbd0f1791)<br><br/> <br><br/>
+
+### kennis/informatiebase
+De vierde en laatste knop op het dasboard is voor de kennis/informatiebase. Dit is een pagina/online bibliotheek van informatie 
+<br>over een product, dienst, afdeling of een ander onderwerp. Hier kan de inspecteur alle informatie vinden betreffende de applicatie<br>
+of andere zaken die van toepassing zijn betreft zijn functie of Real Estate Care. 
+
+![Group 2](https://github.com/Lloyd-Aipassa/real-estate-care-eindopdracht/assets/109522422/42f989f1-f4e0-4f3d-99fe-5d603124c8f8)<br><br/> <br><br/>
+
+
+## prototype
+
+Momenteel is er een prototype gebouwd wat inhoudt dat de applicatie werkt, maar dat er een paar onderdelen nog niet volledig werkend zijn.  De volgende onderdelen zijn nog niet werkend:
 
  - Twee staps auth. wordt nu nog gesimuleerd.
  - De gebruiker kan momenteel nog niet zijn wachtwoord aanpassen in de instellingen.
  - Er is nog geen informatie beschikbaar over de inspecteur in de instellingen
  - Er is geen gebruik van notificaties
  - Er is geen gebruik geluid.
+ - Er kunnen nog geen foto's worden opgeslagen in het formulier.
 
-**Benodigdheden om de code te draaien:**
-
+**Benodigdheden om de applicatie te draaien:**
  - Node js
  - Een code editor 
  - Een terminal
@@ -36,24 +75,26 @@ npm run build
 
 ## Overige informatie
 
-Om het project volledig te laten werken is er uiteindelijk toch gekozen om een express server op te zetten icm mongoDB. (dit viel uiteindelijk best mee om op te zetten)
-<br>
-
- **Hier vind u de server code:**
+Om het project volledig te laten werken is er uiteindelijk toch gekozen om een express server op te zetten icm mongoDB (dit viel uiteindelijk best mee om op te zetten, maar misschien interessant om te laten zien voor toekomstige sollicitaties). <br>
+ **Hier vind u de code van de express server :**
  https://github.com/Lloyd-Aipassa/First-server 
  <br>
  
  **De live versie van de applicatie vind u hier:** 
- https://jolly-dragon-277465.netlify.app/
+ https://real-estate-care-lloyd-aipassa.netlify.app/
   <br>
   
+ **Het backoffice formulier om nieuwe inspecties toe te voegen vind u hier:** 
+ https://real-estate-care-add-inspection.netlify.app/
+  <br>
 
+# Heuristiek
 
 ***Heuristiek 1: Zichtbaarheid van de status is belangrijk***
-Wanneer er informatie van de database geladen moet worden bijvoorbeeld de openstaande inspecties of uitgevoerde inspecties dan wordt er een loader getoond zodat de inspecteur weet dat de data ingeladen wordt.
+Wanneer er informatie van de database ingeladen moet worden (bijvoorbeeld de openstaande inspecties of uitgevoerde inspecties) dan wordt er een loader getoond zodat de inspecteur weet dat de applicatie bezig is met het inladen van data.
 
 ***Heuristiek 2: Het systeem en de echte wereld komen overeen***
-De taal is afgestemd op de inspecteur, en er is gekozen voor iconen die een duidelijk beeld scheppen wat betreft het onderwerp. Denk bijvoorbeeld aan een radar icoon voor instellingen, of een icoon met een vinkje die leidt naar de uitgevoerde inspecties. 
+De taal is afgestemd op de inspecteur, en er is gekozen voor iconen die een duidelijk beeld scheppen wat betreft het onderwerp. Denk bijvoorbeeld aan een radar icoon voor instellingen, of een icoon met een vinkje die leidt naar alle uitgevoerde inspecties. 
 
 ***Heuristiek 3: Gebruiker heeft controle en vrijheid.***
 Alles moet goed snel en bereikbaar zijn voor de inspecteur. Vanaf het dashboard kan overal naar genavigeerd. Om deze reden moet de inspecteur ten alle tijden snel naar het dashboard kunnen navigeren en om die reden staat in de footer altijd een knop die de inspecteur terugbrengt naar het dashboard. 
@@ -79,7 +120,7 @@ Voor deze app heeft dit punt overlap met punt zeven. Het design in minimaal en a
 Hier liggen verbeterpunten. Momenteel als een formulier niet of volledig wordt ingevuld, dan wordt dit aangegeven met een boodschap in grote rode letters. Aan de ene kant is dit duidelijk, aan de andere kant kan dit misschien iets luchtiger. 
 
 ***Heuristiek 10: Bied een helpende hand***
-De applicatie moet over het algemeen voor de inspecteur duidelijk zijn. Maar in de toekomst zou er eventueel een handleiding betreft de applicatie gemaakt kunnen worden en geplaatst kunnen worden in knowledge base.
+De applicatie moet over het algemeen voor de inspecteur duidelijk zijn. Maar in de toekomst zou er eventueel een handleiding wat betreft de applicatie gemaakt kunnen worden. Deze zou dan weer eventueel geplaatst kunnen worden in knowledge base.
 
 # wcag 2.1 a
 
@@ -153,4 +194,6 @@ Getest op de vier grootste browsers.
 **Zorg ervoor dat hulptechnologieën begrijpen waar elke functie voor dient en in welke staat deze zich bevindt.**  
 Hier liggen nog verbeterpunten. Neem bijvoorbeeld een site die jouw app hardop leest deze komt niet door de login pagina.  
 
+## Wat zou ik achteraf anders doen
+Er is een keuze gemaakt voor vuetify3. Veel onderdelen werkten nog niet ten opzichte van vuetify2. één daarvan was bijvoorbeeld de datepicker. om die reden had ik moeten kiezen voor de standaard html datepicker. Deze werkt, maar qua ux is de standaard html datepicker helaas niet zo goed. Een ander onderdeel wat niet werkte was vuetify3 thema light / dark. Dus moest ik deze zelf bouwen en dit had mij veel tijd gekost. Ik had het project tijdelijk stop gezet om mij meer te gaan verdiepen in de javascript module.  Resumerend had ik moeten kiezen voor vuetify2, of in de toekomst goed uitzoeken of alle benodigde onderdelen werkend zijn of niet.
 
