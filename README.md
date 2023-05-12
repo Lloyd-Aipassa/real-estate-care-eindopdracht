@@ -8,7 +8,7 @@ De applicatie werkt als volgt. De inspecteur logt in, vult zijn gegevens in en k
 kan de inspecteur navigeren naar toegewezen rapportages, uitgevoerde rapportages en de kennisbase. Ook vind je hier een knop voor de instellingen.
 In de header kun je ten alle tijden uitloggen en in de footer kun je terug naar de vorige pagina, of terugkeren naar het dashboard. (zie afbeelding).
 
-![Group 3](https://github.com/Lloyd-Aipassa/real-estate-care-eindopdracht/assets/109522422/dfe7b06c-abc1-4f05-b380-f8c448d25d62) <br><br/> <br><br/>
+![Group 3](https://github.com/Lloyd-Aipassa/real-estate-care-eindopdracht/assets/109522422/dfe7b06c-abc1-4f05-b380-f8c448d25d62) <br><br/> 
 
 ### toegewezen rapportages
 Vanuit het dashboard kan de inspecteur naar de toegewezen rapportages. Deze worden toegekend vanuit de backoffice en bevatten het adres, 
