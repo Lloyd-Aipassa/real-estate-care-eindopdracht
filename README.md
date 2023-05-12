@@ -46,6 +46,7 @@ Momenteel is er een prototype gebouwd wat inhoudt dat de applicatie werkt, maar 
  - Er is nog geen informatie beschikbaar over de inspecteur in de instellingen
  - Er is geen gebruik van notificaties
  - Er is geen gebruik geluid.
+ - Er kunnen nog geen foto's worden opgeslagen in het formulier.
 
 **Benodigdheden om de applicatie te draaien:**
  - Node js
@@ -192,4 +193,7 @@ Getest op de vier grootste browsers.
 
 **Zorg ervoor dat hulptechnologieën begrijpen waar elke functie voor dient en in welke staat deze zich bevindt.**  
 Hier liggen nog verbeterpunten. Neem bijvoorbeeld een site die jouw app hardop leest deze komt niet door de login pagina.  
+
+## Wat zou ik achteraf anders doen
+Er is een keuze gemaakt voor vuetify3. Veel onderdelen werkten nog niet ten opzichte van vuetify2. één daarvan was bijvoorbeeld de datepicker. om die reden had ik moeten kiezen voor de standaard html datepicker. Deze werkt, maar qua ux is de standaard html datepicker helaas niet zo goed. Een ander onderdeel wat niet werkte was vuetify3 thema light / dark. Dus moest ik deze zelf bouwen en dit had mij veel tijd gekost. Ik had het project tijdelijk stop gezet om mij meer te gaan verdiepen in de javascript module.  Resumerend had ik moeten kiezen voor vuetify2, of in de toekomst goed uitzoeken of alle benodigde onderdelen werkend zijn of niet.
 
