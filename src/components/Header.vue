@@ -1,7 +1,7 @@
 <template>
   <header>
     <div class="content">
-      <img :src="require('@/assets/logoRealEstateCare.svg')" alt="logo" />
+      <img :src="require('@/assets/logoRealEstateCare.svg')" alt="logo Real Estate Care" />
       <v-btn class="ml-2 text-black" variant="flat" color="#fff">
         log out
         <v-dialog v-model="dialog" activator="parent" max-width="500">

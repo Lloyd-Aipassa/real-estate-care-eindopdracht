@@ -15,7 +15,43 @@
                             You can not change your password in the demo application.
                         </v-card>
                     </v-overlay></v-list-item>
-                <v-list-item prepend-icon="mdi-forum" title="About Tony" value="about"></v-list-item>
+
+
+
+
+                <div class="text-center">
+                    <v-dialog v-model="about" width="auto">
+                        <template v-slot:activator="{ props }">
+                            <v-list-item v-bind="props" prepend-icon="mdi-forum" title="About Tony"
+                                value="about"></v-list-item>
+                        </template>
+
+                        <v-card class="theme2">
+                            <v-card-text>
+                                <p>
+                                    Anthony Edward "Tony" Stark was a billionaire industrialist, a founding member of the
+                                    Avengers, and the former CEO of Stark Industries. A brash but brilliant inventor, Stark
+                                    was self-described as a genius, billionaire, playboy, and philanthropist. With his great
+                                    wealth and exceptional technical knowledge, Stark was one of the world's most powerful
+                                    men following the deaths of his parents and enjoyed the playboy lifestyle for many years
+                                    until he was kidnapped by the Ten Rings in Afghanistan, while demonstrating a fleet of
+                                    Jericho missiles. With his life on the line, Stark created an armored suit which he used
+                                    to escape his captors. Upon returning home, he utilized several more armors to use
+                                    against terrorists, as well as Obadiah Stane who turned against Stark. Following his
+                                    fight against Stane, Stark publicly revealed himself as Iron Man.<br><br>
+                                    After leaving his superhero life behind him, he is now a well respected inspecter for Real Estate Care
+                                </p>
+                            </v-card-text>
+                            <v-card-actions>
+                                <v-btn color="primary" block @click="about = false">Close About tony</v-btn>
+                            </v-card-actions>
+                        </v-card>
+                    </v-dialog>
+                </div>
+
+
+
+
                 <v-list-item prepend-icon="mdi-brightness-4" title="Theme" @click="toggle2(!isDarkmode)"></v-list-item>
             </v-list>
 
@@ -36,9 +72,6 @@
                     </v-card>
                 </v-overlay>
             </v-checkbox>
-
-
-
         </main>
     </v-navigation-drawer>
 
@@ -61,6 +94,7 @@ export default {
             isDarkmode: false,
             checkbox1: false,
             checkbox2: false,
+            about: false,
         }
     },
     methods: {
@@ -95,8 +129,8 @@ main {
     height: 100%;
 }
 
-.divider {
-    margin: 20px 130px;
+.v-list-item--nav .v-list-item-title {
+    text-align: left;
 }
 
 .notifi {
@@ -115,5 +149,4 @@ main {
     main {
         padding: 0;
     }
-}
-</style>
+}</style>

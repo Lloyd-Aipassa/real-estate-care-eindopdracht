@@ -6,7 +6,7 @@
     </button>
 
     <div class="text-center">
-      <v-dialog v-model="dialog" width="auto">
+      <v-dialog v-model="infomation" width="auto">
         <template v-slot:activator="{ props }">
           <button>
             <v-icon style="color: #FFF;" v-bind="props">mdi-logout</v-icon>
@@ -19,7 +19,7 @@
             Deze applicatie is gemaakt door Lloyd Aipassa als afstudeer project voor het onderdeel "Front-end frameworks"
           </v-card-text>
           <v-card-actions>
-            <v-btn color="primary" block @click="dialog = false">Close information</v-btn>
+            <v-btn color="primary" block @click="infomation = false">Close information</v-btn>
           </v-card-actions>
         </v-card>
       </v-dialog>
@@ -38,7 +38,7 @@ export default {
   name: 'Footer',
   data() {
     return {
-      dialog: false,
+      infomation: false,
     }
   },
 }
