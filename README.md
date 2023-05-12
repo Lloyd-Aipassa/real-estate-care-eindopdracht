@@ -43,10 +43,9 @@ Momenteel is er een prototype gebouwd wat inhoudt dat de applicatie werkt, maar 
 
  - Twee staps auth. wordt nu nog gesimuleerd.
  - De gebruiker kan momenteel nog niet zijn wachtwoord aanpassen in de instellingen.
- - Er is nog geen informatie beschikbaar over de inspecteur in de instellingen
- - Er is geen gebruik van notificaties
- - Er is geen gebruik geluid.
- - Er kunnen nog geen foto's worden opgeslagen in het formulier.
+ - Er is nog geen gebruik van notificaties
+ - Er is nog geen gebruik geluid.
+ - Er kunnen nog geen foto's worden opgeslagen middels het het formulier.
 
 **Benodigdheden om de applicatie te draaien:**
  - Node js
