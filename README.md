@@ -4,9 +4,9 @@ Deze applicatie is gemaakt door Lloyd Aipassa als afstudeer project voor het ond
 ## Werking applicatie
 
 ### login
-De applicatie werkt als volgt. De inspecteur logt in, vult zijn gegevens in en komt terecht in het dashboard. Vanuit het dasboard <br>
-kan de inspecteur navigeren naar toegewezen rapportages, uitgevoerde rapportages en de kennisbase. Ook vind je hier een knop voor de instellingen.<br>
-In de header kun je ten alle tijden uitloggen en in de footer kun je terug naar de vorige pagina, of terugkeren naar het dashboard. (zie afbeelding).<br>
+De applicatie werkt als volgt. De inspecteur logt in, vult zijn gegevens in en komt terecht in het dashboard. Vanuit het dasboard 
+kan de inspecteur navigeren naar toegewezen rapportages, uitgevoerde rapportages en de kennisbase. Ook vind je hier een knop voor de instellingen.
+In de header kun je ten alle tijden uitloggen en in de footer kun je terug naar de vorige pagina, of terugkeren naar het dashboard. (zie afbeelding).
 
 ![Group 3](https://github.com/Lloyd-Aipassa/real-estate-care-eindopdracht/assets/109522422/dfe7b06c-abc1-4f05-b380-f8c448d25d62) <br><br/> <br><br/>
 
