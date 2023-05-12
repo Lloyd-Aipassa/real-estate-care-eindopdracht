@@ -3,7 +3,7 @@ Deze applicatie is gemaakt door Lloyd Aipassa als afstudeer project voor het ond
 
 ## Werking applicatie
 
-<b>login</b>
+<b>login</b><br>
 De applicatie werkt als volgt. De inspecteur logt in, vult zijn gegevens in en komt terecht in het dashboard. Vanuit het dasboard 
 kan de inspecteur navigeren naar toegewezen rapportages, uitgevoerde rapportages en de kennisbase. Ook vind je hier een knop voor de instellingen.
 In de header kun je ten alle tijden uitloggen en in de footer kun je terug naar de vorige pagina, of terugkeren naar het dashboard. (zie afbeelding).
