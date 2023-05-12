@@ -9,7 +9,7 @@
 
             <v-list density="compact" nav>
                 <P>Account settings</P>
-                <v-list-item prepend-icon="mdi-view-dashboard" title="Change password" value="home"> <v-overlay
+                <v-list-item  prepend-icon="mdi-view-dashboard" title="Change password" value="home"> <v-overlay
                         activator="parent" location-strategy="connected" scroll-strategy="close">
                         <v-card class="pa-2">
                             You can not change your password in the demo application.
@@ -22,7 +22,7 @@
                 <div class="text-center">
                     <v-dialog v-model="about" width="auto">
                         <template v-slot:activator="{ props }">
-                            <v-list-item v-bind="props" prepend-icon="mdi-forum" title="About Tony"
+                            <v-list-item class="about" v-bind="props" prepend-icon="mdi-forum" title="About Tony"
                                 value="about"></v-list-item>
                         </template>
 
@@ -129,9 +129,9 @@ main {
     height: 100%;
 }
 
-.v-list-item--nav .v-list-item-title {
+.about {
     text-align: left;
-}
+} 
 
 .notifi {
     padding-left: 40px;
