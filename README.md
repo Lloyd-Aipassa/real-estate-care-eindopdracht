@@ -45,8 +45,8 @@ Momenteel is er een prototype gebouwd wat inhoudt dat de applicatie werkt, maar 
  - De gebruiker kan momenteel nog niet zijn wachtwoord aanpassen in de instellingen.
  - Er is nog geen gebruik van notificaties
  - Er is nog geen gebruik geluid.
- - Er kunnen nog geen foto's worden opgeslagen middels het het formulier.
- ***** Er is een vervelende bug die er voor zorgt dat als de applicatie voor het eerst wordt opgestard, de scroll bar verdwijnt. Ik ben er niet uitgekomen waarom dit gebeurd. Om de app te laten werken is éénmalig een refresh nog (F5) daarna werkt hij gewoon naar behoren**** 
+ - Er kunnen nog geen foto's worden opgeslagen middels het het formulier.<br><br>
+ <b>***** Er is een vervelende bug die er voor zorgt dat als de applicatie voor het eerst wordt opgestard, de scroll bar verdwijnt. Ik ben er niet uitgekomen waarom dit gebeurd. Om de app te laten werken is éénmalig een refresh nog (F5) daarna werkt hij gewoon naar behoren**** </b>
 
 **Benodigdheden om de applicatie te draaien:**
  - Node js
