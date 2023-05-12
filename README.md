@@ -13,7 +13,7 @@ In de header kun je ten alle tijden uitloggen en in de footer kun je terug naar 
 <b>toegewezen rapportages</b><br>
 Vanuit het dashboard kan de inspecteur naar de toegewezen rapportages. Deze worden toegekend vanuit de backoffice en bevatten het adres, 
 de datum voorwanneer de inspectie uiterlijk uitgevoerd moet worden en het soort inspectie. Als de inspecteur op de groene knop klikt, dan wordt 
-hij automatisch doorgestuurd naar het juiste formulier voor de betreffende rapportage. (Zie afbeelding).<br><br>
+hij automatisch doorgestuurd naar het juiste formulier voor de betreffende rapportage. (Zie afbeelding).
 
 ![Group 1](https://user-images.githubusercontent.com/109522422/237060028-9f3c26e0-5878-4c8f-98e4-2d55f072b360.png)<br><br/> 
 
