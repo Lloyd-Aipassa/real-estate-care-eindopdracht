@@ -3,6 +3,9 @@ Deze applicatie is gemaakt door Lloyd Aipassa als afstudeer project voor het ond
 
 ## Werking applicatie
 
+login: email: tony@stark.com <br>
+           ww: ironman  
+
 <b>login</b><br>
 De applicatie werkt als volgt. De inspecteur logt in, vult zijn gegevens in en komt terecht in het dashboard. Vanuit het dasboard 
 kan de inspecteur navigeren naar toegewezen rapportages, uitgevoerde rapportages en de kennisbase. Ook vind je hier een knop voor de instellingen.
