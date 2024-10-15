@@ -35,7 +35,7 @@ export default {
   methods: {
     getData() {
       this.loading = true
-      fetch('https://kind-tan-goshawk-tux.cyclic.app/scheduled?_sort=Datum&order=desc')
+      fetch('https://first-server-production.up.railway.app/scheduled?_sort=Datum&order=desc')
         .then((res) => res.json()
           .then(this.loading = false))
         .then((data) => this.toDo = data.sort((d1, d2) => (d1.Datum > d2.Datum) ? 1 : (d1.Datum < d2.Datum) ? -1 : 0))
@@ -44,7 +44,7 @@ export default {
 
     deleteRapport(id) {
 
-      axios.delete('https://kind-tan-goshawk-tux.cyclic.app/scheduled' + id)
+      axios.delete('https://first-server-production.up.railway.app/scheduled' + id)
         .then(() => { this.toDo.splice(id, 1) })
         .then(() => {
           //   this.$router.push({ name: 'Completed' })
