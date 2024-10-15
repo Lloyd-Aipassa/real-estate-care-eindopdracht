@@ -17,7 +17,7 @@ export default createStore({
   //aanroepen functies
   actions: {
     async fetchSchades({ commit }) {
-      const response = await axios.get('https://kind-tan-goshawk-tux.cyclic.app/schade')
+      const response = await axios.get('https://first-server-production.up.railway.app/schade')
       this.loading = false
       const sortedData = response.data.sort((d1, d2) => (d1.Datum > d2.Datum) ? 1 : (d1.Datum < d2.Datum) ? -1 : 0)
       commit('setSchades', sortedData)
@@ -25,13 +25,13 @@ export default createStore({
   
 
     async addSchadeOpnemen ({ commit }, newSchade ) {
-        const response = await axios.post('https://kind-tan-goshawk-tux.cyclic.app/schade', {...newSchade})
+        const response = await axios.post('https://first-server-production.up.railway.app/schade', {...newSchade})
         commit('newSchadeOpnemen', response.data)
     },
     
     
   async deleteRapport({ commit }, _id) {
-    await axios.delete(`https://kind-tan-goshawk-tux.cyclic.app/schade${_id}`);
+    await axios.delete(`https://first-server-production.up.railway.app/schade${_id}`);
     commit('removeSchadeOpnemen', _id)
   }
 
