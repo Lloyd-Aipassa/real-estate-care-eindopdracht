@@ -411,7 +411,7 @@ export default {
     methods: {
         async Update(e) {
             e.preventDefault();
-            axios.put('https://kind-tan-goshawk-tux.cyclic.app/schade' + this.id, {
+            axios.put('https://first-server-production.up.railway.app/schade' + this.id, {
                 Locatie: this.Schade.Locatie,
                 Datum: this.Schade.Datum,
                 NieuweSchade: this.Schade.NieuweSchade,
